@@ -14,8 +14,6 @@ import OpenAI from "openai";
 const GenerateTrip = () => {
   const { tripData, setTripData } = useContext(CreateTripContext);
   const [loading,setLoading] = useState(false);
-  // const GEMINI_API_KEY = '';
-  // const OPENAI_KEY = '';
 // const BASE_URL = 'https://api.openai.com/v1/responses';
 // const BASE_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 const user=auth.currentUser;
