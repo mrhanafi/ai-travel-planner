@@ -9,7 +9,7 @@ import UserTripList from "../../components/MyTrips/UserTripList";
 const MyTrip = () => {
   const [userTrips, setUserTrips] = useState([]);
   const user = auth.currentUser;
-  const [loading,setLoading] = useState(false);
+  const [loading,setLoading] = useState(false); 
 
   useEffect(() => {
     user && getMyTrips()
