@@ -35,7 +35,7 @@ const SearchPlace = () => {
           // 'details' is provided when fetchDetails = true
           console.log(data.description);
           console.log(details?.geometry.location);
-          console.log(details?.photos[0]?.photo_reference);
+          console.log(details?.photos);
           console.log(details?.url);
           setTripData({
             locationInfo: {

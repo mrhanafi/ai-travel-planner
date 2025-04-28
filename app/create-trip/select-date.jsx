@@ -39,8 +39,10 @@ const SelectDate = () => {
     console.log(totalNumberOfDays + 1);
     setTripData({
       ...tripData,
-      startDate: startDate,
-      endDate: endDate,
+      startDate: moment(startDate).format("DD MMM YYYY"),
+      // startDate: startDate,
+      endDate: moment(endDate).format("DD MMM YYYY"),
+      // endDate: endDate,
       totalNumberOfDays: totalNumberOfDays + 1,
     });
     router.push("/create-trip/select-budget");
